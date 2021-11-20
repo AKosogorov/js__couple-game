@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 200%;
+  color: aquamarine;
+  background-color: #222;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 75px;
+  max-width: 1600px;
+}
+
+.header {
+  text-align: center;
+  color: yellow;
+}
+
+.form {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0 auto 50px;
+  padding: 20px;
+  max-width: 510px;
+  color: aliceblue;
+  background-color: #444;
+  transition: width .3s ease-in-out;
+}
+
+.form_play {
+  display: none;
+}
+
+input {
+  display: block;
+  margin: 10px 0 20px;
+  padding: 5px 10px;
+  width: 170px;
+  color: #333;
+}
+
+.btn {
+  border: 3px solid white;
+  border-radius: 100px;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+
+.btn:hover,
+.btn:focus {
+  background-color: white;
+  color: #333;
+}
+
+.btn:active {
+  background-color: #333;
+  color: white;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.card {
+  margin-bottom: 25px;
+  align-items: center;
+  text-align: center;
+  background-color: #444;  
+  transition: all .2s ease-in-out;  
+}
+
+.card_closed {
+  color: black;
+  background-color: black;
+  user-select: none;
+  cursor: pointer;
+}
+
+.card_closed:hover {
+  background-color: #444;
+  color: #444;
+}
+
+.card_open {
+  color: aquamarine;
+  background-color: #444;
+  cursor: initial;
+}
+
+.card_open:hover {
+  color: aquamarine;
+}
+
+.card_10 {
+  width: calc((100% - 9 * 25px) / 10);
+  height: 50px;
+}
+
+.card_10:not(:nth-child(10n)) {
+  margin-right: 25px;
+}
+
+.card_8 {
+  width: calc((100% - 7 * 25px) / 8);
+  height: 50px;
+}
+
+.card_8:not(:nth-child(8n)) {
+  margin-right: 25px;
+}
+
+.card_6 {
+  width: calc((100% - 5 * 25px) / 6);
+  height: 50px;
+}
+
+.card_6:not(:nth-child(6n)) {
+  margin-right: 25px;
+}
+
+.card_4 {
+  width: calc((100% - 3 * 25px) / 4);
+  height: 50px;
+}
+
+.card_4:not(:nth-child(4n)) {
+  margin-right: 25px;
+}
+
+.card_2 {
+  width: calc((100% - 25px) / 2);
+  height: 50px;
+}
+
+.card_2:not(:nth-child(2n)) {
+  margin-right: 25px;
+}
+
+.btn-replay {
+  display: block;
+  margin: 0 auto 50px;
+}
+
+.btn_hidden {
+  display: none;
+}
+
+
